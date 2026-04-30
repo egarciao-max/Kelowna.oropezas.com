@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KELOWNA.OROPEZAS.COM — Local News from Kelowna, BC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta name="description" content="Kelowna's local news — powered by Oropezas.">
+  <meta property="og:title" content="Kelowna.Oropezas.com">
+  <meta property="og:description" content="Local news from Kelowna, BC, Canada.">
+</head>
+<body data-page="index">
+
+  <header></header>
+
+  <main>
+    <!-- FEATURED -->
+    <section class="featured-section">
+      <div id="featured-container">
+        <!-- Loaded by news-loader.js -->
+        <div class="skeleton-featured">
+          <div class="skeleton-img"></div>
+          <div class="skeleton-content">
+            <div class="skeleton-line w60"></div>
+            <div class="skeleton-line w90"></div>
+            <div class="skeleton-line w40"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST NEWS -->
+    <section>
+      <h2 class="section-title">Latest News</h2>
+      <div id="articles-grid" class="articles-grid">
+        <!-- Loaded by news-loader.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="footer-year"></span> Kelowna.Oropezas.com &mdash; Local news from Kelowna, BC</p>
+    <p style="margin-top:0.5rem; font-size:0.75rem;">
+      <a href="noticias.html" style="color:inherit; margin: 0 0.5rem;">All Articles</a>
+      <a href="contacto.html" style="color:inherit; margin: 0 0.5rem;">Contact</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+  <script src="js/news-loader.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
