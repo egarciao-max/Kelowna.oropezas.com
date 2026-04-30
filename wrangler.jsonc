@@ -1,0 +1,32 @@
+{
+  "name": "kelowna-oropezas",
+  "main": "src/worker.js",
+  "workers_dev": true,
+  "compatibility_date": "2026-04-07",
+  "triggers": {
+    "crons": [
+      "0 12 * * *"
+    ]
+  },
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true
+    }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "KELOWNA_KV",
+      "id": "REPLACE_WITH_KV_NAMESPACE_ID"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "bucket_name": "kelowna-media",
+      "binding": "KELOWNA_MEDIA"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  }
+}
