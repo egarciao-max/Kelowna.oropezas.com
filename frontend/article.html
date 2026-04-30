@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article — Kelowna.Oropezas.com</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <header></header>
+
+  <main>
+    <section class="article-page">
+      <div class="container">
+        <article class="article-content-wrap">
+          <p id="article-category" class="news-tag"></p>
+          <h1 id="article-title"></h1>
+          <p id="article-date" class="news-date"></p>
+
+          <!-- Author TOP -->
+          <div id="article-author-top" style="display:none; margin:.8rem 0 1.2rem; padding:.8rem 1rem; background:#f8f8f8; border-radius:3px;">
+            <a id="article-author-top-link" href="#" style="display:flex; align-items:center; gap:.7rem; text-decoration:none; color:inherit;">
+              <img id="article-author-top-avatar" src="" alt="" style="width:36px; height:36px; border-radius:50%; object-fit:cover; background:#ddd;">
+              <div>
+                <div style="font-weight:700; font-size:.9rem;" id="article-author-top-name"></div>
+                <div style="font-size:.75rem; color:#888;" id="article-author-top-title"></div>
+              </div>
+            </a>
+          </div>
+
+          <p id="article-excerpt" class="article-excerpt"></p>
+
+          <img id="article-image" class="featured-image" alt="" style="display:none;">
+
+          <video id="article-video" class="featured-video" controls style="display:none;">
+            Your browser does not support video.
+          </video>
+
+          <div id="article-content" class="article-body"></div>
+
+          <!-- Author BOTTOM -->
+          <div id="article-author-bottom" style="display:none; margin:2.5rem 0 0; padding:1.2rem; background:#f8f8f8; border-radius:4px; border:1px solid #ebebeb;">
+            <p style="font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; color:#999; margin:0 0 .8rem;">Published by</p>
+            <a id="article-author-bottom-link" href="#" style="display:flex; align-items:center; gap:.9rem; text-decoration:none; color:inherit;">
+              <img id="article-author-bottom-avatar" src="" alt="" style="width:52px; height:52px; border-radius:50%; object-fit:cover; background:#ddd; flex-shrink:0;">
+              <div>
+                <div style="font-weight:800; font-size:1rem;" id="article-author-bottom-name"></div>
+                <div style="font-size:.82rem; color:#666; margin-top:2px;" id="article-author-bottom-title"></div>
+                <div style="font-size:.8rem; color:#888; margin-top:4px;" id="article-author-bottom-bio"></div>
+              </div>
+            </a>
+          </div>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="footer-year"></span> Kelowna.Oropezas.com</p>
+  </footer>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+  <script src="js/article.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
