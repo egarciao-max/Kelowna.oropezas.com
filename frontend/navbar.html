@@ -1,0 +1,39 @@
+<div class="header-container">
+    <a href="/index.html" class="logo" style="font-size:1.5rem; letter-spacing:.1em;">
+        KELOWNA<span style="color:#c8102e;">.OROPEZAS</span>
+    </a>
+    <p class="tagline">Local news from Kelowna, BC, Canada</p>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/noticias.html">News</a>
+        <a href="/contacto.html">Contact</a>
+    </nav>
+
+    <!-- AUTH CONTROLS -->
+    <div class="auth-nav-controls">
+        <!-- Botón Iniciar sesión (visible cuando NO hay sesión) -->
+        <button id="auth-login-btn" class="auth-login-btn" onclick="KELOWNA_AUTH.openLoginModal()" style="display:flex;" aria-label="Sign in">
+            <i class="bi bi-person"></i>
+            <span class="auth-login-label">Sign In</span>
+        </button>
+
+        <!-- Avatar + menú (visible cuando SÍ hay sesión) -->
+        <div id="auth-user-avatar" class="auth-user-avatar" onclick="KELOWNA_AUTH.toggleUserMenu()" style="display:none;" aria-label="My account">
+            <img id="auth-user-picture" src="" alt="Profile" class="auth-avatar-img">
+            <span id="auth-user-name" class="auth-user-name-label"></span>
+            <i class="bi bi-chevron-down auth-chevron"></i>
+        </div>
+
+        <!-- Menú desplegable -->
+        <div id="auth-user-menu" class="auth-user-menu">
+            <a href="/account.html" class="auth-menu-item">
+                <i class="bi bi-person-circle"></i> My Account
+            </a>
+            <hr class="auth-menu-divider">
+            <button class="auth-menu-item auth-menu-logout" onclick="KELOWNA_AUTH.logout()">
+                <i class="bi bi-box-arrow-right"></i> Sign Out
+            </button>
+        </div>
+    </div>
+</div>
